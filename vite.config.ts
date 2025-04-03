@@ -15,6 +15,9 @@ export default defineConfig(({ mode }) => ({
     componentTagger(),
   ].filter(Boolean),
   base: '/franslukas.dev/',
+  build: {
+    outDir: 'docs',
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
