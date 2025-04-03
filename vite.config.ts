@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
-  base: '/franslukas.dev/',
+  base: '/',
   build: {
     outDir: 'docs',
   },
