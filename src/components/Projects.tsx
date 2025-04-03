@@ -1,0 +1,77 @@
+
+import React from 'react';
+import { ArrowUpRight, ExternalLink, Github } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+
+const Projects = () => {
+  const projects = [
+    {
+      title: "kjellgustavsson.com",
+      description: "A personal website built for artist Kjell Gustavsson, showcasing his portfolio, biography, and contact information.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2426&q=80",
+      techs: ["Wasp", "React", "TypeScript", "PostgreSQL"],
+      link: "https://kjellgustavsson.com",
+    },
+    {
+      title: "samrosen.art",
+      description: "An art portfolio website for Sam Rosen, featuring galleries, artist statement, and exhibition history.",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2352&q=80",
+      techs: ["Wasp", "React", "TypeScript", "PostgreSQL"],
+      link: "https://samrosen.art",
+    }
+  ];
+
+  return (
+    <section id="projects" className="section bg-secondary">
+      <div className="container">
+        <h2 className="text-3xl md:text-4xl font-serif mb-4 text-center">Featured Projects</h2>
+        <p className="text-lg text-center text-foreground/80 mb-12 max-w-2xl mx-auto">
+          Some of my recent solo projects, showcasing my full-stack development capabilities.
+        </p>
+        
+        <div className="grid md:grid-cols-2 gap-8">
+          {projects.map((project, index) => (
+            <Card key={project.title} className="overflow-hidden hover:shadow-lg transition-shadow opacity-0 animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
+              <div className="aspect-video overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="flex items-center justify-between">
+                  {project.title}
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-foreground">
+                    <ArrowUpRight size={20} />
+                  </a>
+                </CardTitle>
+                <CardDescription>{project.description}</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {project.techs.map(tech => (
+                    <span key={tech} className="text-xs bg-background px-2 py-1 rounded-full">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </CardContent>
+              <CardFooter>
+                <Button asChild variant="outline" size="sm">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <ExternalLink size={16} />
+                    Visit site
+                  </a>
+                </Button>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
