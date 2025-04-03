@@ -1,16 +1,16 @@
 
 import React from 'react';
-import { Mail, Github, Linkedin, ExternalLink, Drum } from 'lucide-react';
+import { Mail, Github, Linkedin, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 
 const Contact = () => {
   return (
-    <section id="contact" className="section bg-purple-200/80 text-foreground">
+    <section id="contact" className="section bg-primary text-primary-foreground">
       <div className="container">
         <h2 className="text-3xl md:text-4xl font-serif mb-4 text-center">Let's Work Together</h2>
-        <p className="text-lg text-center text-foreground/80 mb-12 max-w-2xl mx-auto">
+        <p className="text-lg text-center text-primary-foreground/80 mb-12 max-w-2xl mx-auto">
           Have a project in mind? Get in touch and let's turn your ideas into reality.
         </p>
         
@@ -21,7 +21,7 @@ const Contact = () => {
               <div className="space-y-4">
                 <a 
                   href="mailto:contact@franslukas.com" 
-                  className="flex items-center gap-3 text-foreground/80 hover:text-foreground"
+                  className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground"
                 >
                   <Mail className="h-5 w-5" />
                   <span>contact@franslukas.com</span>
@@ -31,7 +31,7 @@ const Contact = () => {
                   href="https://github.com/frans-lukas" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-foreground/80 hover:text-foreground"
+                  className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground"
                 >
                   <Github className="h-5 w-5" />
                   <span>github.com/frans-lukas</span>
@@ -41,7 +41,7 @@ const Contact = () => {
                   href="https://linkedin.com/in/franslukas" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-foreground/80 hover:text-foreground"
+                  className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground"
                 >
                   <Linkedin className="h-5 w-5" />
                   <span>linkedin.com/in/franslukas</span>
@@ -52,23 +52,17 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-medium mb-4">Creative Side</h3>
               <p className="mb-4">
-                Interested in my creative work with ceramics, tarot, and drumming? Visit my art portfolio:
+                Interested in my creative work with ceramics and tarot? Visit my art portfolio:
               </p>
-              <div className="space-y-3">
-                <a 
-                  href="https://franslukas.art" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-foreground hover:underline"
-                >
-                  <ExternalLink className="h-4 w-4" />
-                  <span>franslukas.art</span>
-                </a>
-                <div className="flex items-center gap-2 text-foreground">
-                  <Drum className="h-5 w-5" />
-                  <span>Drumming & Percussion</span>
-                </div>
-              </div>
+              <a 
+                href="https://franslukas.art" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-primary-foreground hover:underline"
+              >
+                franslukas.art
+                <ExternalLink className="h-4 w-4" />
+              </a>
             </div>
           </div>
           
@@ -96,7 +90,7 @@ const Contact = () => {
                 <Textarea id="message" rows={5} placeholder="Tell me about your project..." />
               </div>
               
-              <Button type="submit" className="w-full bg-purple-500 text-white hover:bg-purple-600">
+              <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
                 Send Message
               </Button>
             </form>
