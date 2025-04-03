@@ -7,17 +7,17 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 const Projects = () => {
   const projects = [
     {
-      title: "kjellgustavsson.com",
+      title: "kjellgustafsson.com",
       description: "A personal website built for artist Kjell Gustavsson, showcasing his portfolio, biography, and contact information.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2426&q=80",
-      techs: ["Wasp", "React", "TypeScript", "PostgreSQL"],
-      link: "https://kjellgustavsson.com",
+      techs: ["Wix", "HTML", "CSS"],
+      link: "https://kjellgustafsson.com",
     },
     {
       title: "samrosen.art",
       description: "An art portfolio website for Sam Rosen, featuring galleries, artist statement, and exhibition history.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2352&q=80",
-      techs: ["Wasp", "React", "TypeScript", "PostgreSQL"],
+      techs: ["Shopify", "Liquid", "JavaScript", "HTML", "CSS"],
       link: "https://samrosen.art",
     }
   ];
