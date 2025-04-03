@@ -9,25 +9,26 @@ const Projects = () => {
     {
       title: "kjellgustafsson.com",
       description: "A personal website built for artist Kjell Gustavsson, showcasing his portfolio, biography, and contact information.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2426&q=80",
-      techs: ["Wix", "HTML", "CSS"],
+      image: "/images/kjellgustafsson_mockup_p_abstract.png",
+      techs: ["Wasp", "React", "TypeScript", "PostgreSQL"],
       link: "https://kjellgustafsson.com",
     },
     {
       title: "samrosen.art",
       description: "An art portfolio website for Sam Rosen, featuring galleries, artist statement, and exhibition history.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2352&q=80",
-      techs: ["Shopify", "Liquid", "JavaScript", "HTML", "CSS"],
+      image: "/images/samrosen_mobile_mockup.png",
+      techs: ["Wasp", "React", "TypeScript", "PostgreSQL"],
       link: "https://samrosen.art",
     }
   ];
+  
 
   return (
     <section id="projects" className="section bg-secondary">
       <div className="container">
         <h2 className="text-3xl md:text-4xl font-serif mb-4 text-center">Featured Projects</h2>
         <p className="text-lg text-center text-foreground/80 mb-12 max-w-2xl mx-auto">
-          Some of my recent solo projects, showcasing my full-stack development capabilities.
+        Some of my recent client projects, showcasing my web development and design expertise.
         </p>
         
         <div className="grid md:grid-cols-2 gap-8">
