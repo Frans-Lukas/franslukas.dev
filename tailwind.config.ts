@@ -63,6 +63,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
+        purple: {
+          50: '#F6F4FD',
+          100: '#E5DEFF',
+          200: '#C7BDFF',
+          300: '#A997FA',
+          400: '#9B87F5',
+          500: '#8B5CF6',
+          600: '#7E69AB',
+          700: '#6E59A5',
+          800: '#5A4A88',
+          900: '#473B6B',
+        },
         blue: {
           50: '#E9F0FB',
           100: '#C7D9F5',

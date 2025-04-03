@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { GraduationCap, Code, Music, Briefcase } from 'lucide-react';
+import { GraduationCap, Code, Music, Briefcase, Drum } from 'lucide-react';
 
 const About = () => {
   return (
@@ -23,37 +23,44 @@ const About = () => {
             <p className="text-lg opacity-0 animate-slide-in animation-delay-200">
               When I'm not coding, you might find me working with ceramics or exploring tarot—creative 
               interests that inform my approach to problem-solving and design. 
-              You can see that side of me at <a href="https://franslukas.art" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">franslukas.art</a>.
+              You can see that side of me at <a href="https://franslukas.art" target="_blank" rel="noopener noreferrer" className="text-purple-500 hover:underline">franslukas.art</a>.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-secondary p-6 rounded-lg opacity-0 animate-fade-in">
-              <GraduationCap className="h-8 w-8 text-blue-600 mb-4" />
+              <GraduationCap className="h-8 w-8 text-purple-500 mb-4" />
               <h3 className="text-xl font-medium mb-2">Education</h3>
               <p>MSc in Computer Science, Umeå University</p>
             </div>
             
             <div className="bg-secondary p-6 rounded-lg opacity-0 animate-fade-in animation-delay-100">
-              <Briefcase className="h-8 w-8 text-blue-600 mb-4" />
+              <Briefcase className="h-8 w-8 text-purple-500 mb-4" />
               <h3 className="text-xl font-medium mb-2">Experience</h3>
               <p>Backend Engineer at Spotify</p>
               <p>Freelance Developer</p>
             </div>
             
             <div className="bg-secondary p-6 rounded-lg opacity-0 animate-fade-in animation-delay-200">
-              <Code className="h-8 w-8 text-blue-600 mb-4" />
+              <Code className="h-8 w-8 text-purple-500 mb-4" />
               <h3 className="text-xl font-medium mb-2">Focus Areas</h3>
               <p>System Design</p>
               <p>Rapid Prototyping</p>
               <p>Full-Stack Development</p>
+              <p>Kubernetes</p>
+              <p>Java</p>
+              <p>Grafana (Monitoring)</p>
             </div>
             
             <div className="bg-secondary p-6 rounded-lg opacity-0 animate-fade-in animation-delay-300">
-              <Music className="h-8 w-8 text-clay-600 mb-4" />
+              <div className="flex items-center mb-4">
+                <Drum className="h-8 w-8 text-purple-500 mr-2" />
+                <Music className="h-8 w-8 text-clay-600" />
+              </div>
               <h3 className="text-xl font-medium mb-2">Creative Side</h3>
               <p>Ceramics</p>
               <p>Tarot</p>
+              <p>Drumming</p>
             </div>
           </div>
         </div>

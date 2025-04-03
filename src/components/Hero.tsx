@@ -7,14 +7,14 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center relative">
       <div 
-        className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-50 z-[-1]"
+        className="absolute inset-0 bg-gradient-to-br from-purple-100 to-transparent opacity-70 z-[-1]"
         aria-hidden="true"
       />
       
       <div className="container mx-auto px-4 md:px-6 pt-16">
         <div className="max-w-3xl mx-auto md:mx-0">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 opacity-0 animate-fade-in">
-            Full-Stack Developer <span className="text-blue-600">&</span> <br className="hidden md:block" />
+            Full-Stack Developer <span className="text-purple-500">&</span> <br className="hidden md:block" />
             System Designer
           </h1>
           
