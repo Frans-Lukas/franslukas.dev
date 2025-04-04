@@ -14,13 +14,14 @@ const Hero = () => {
       <div className="container mx-auto px-4 md:px-6 pt-16">
         <div className="max-w-3xl mx-auto md:mx-0">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 opacity-0 animate-fade-in">
-            Backend Engineer <span className="text-purple-500">&</span> <br className="hidden md:block" />
-            AI-Assisted Developer
+            Rapid Prototyping <span className="text-purple-500">&</span> <br className="hidden md:block" />
+            Development with Wasp
           </h1>
           
           <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl opacity-0 animate-fade-in animation-delay-200">
-            Turning ideas into functional products quickly through AI-assisted development.
-            Specializing in Java backend systems, Kubernetes, and observability with Grafana.
+            Turning ideas into functional products in record time. 
+            Specializing in fast-paced development using Wasp, Java backends,
+            and AI-assisted workflows.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in animation-delay-300">
