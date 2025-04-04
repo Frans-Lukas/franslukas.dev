@@ -96,7 +96,7 @@ const Skills = () => {
                 <span className="font-medium flex items-center"><Zap className="h-4 w-4 mr-1 inline text-purple-500" /> Problem to Solution:</span> Give me a problem, and I'll solve it quickly using my combined experience with backend systems and AI-assisted development.
               </p>
               <p>
-                <span className="font-medium flex items-center"><Zap className="h-4 w-4 mr-1 inline text-purple-500" /> AI Workflow:</span> I use Lovable to create the initial framework, Cursor for refining code, and ChatGPT for mockups, copy, and technical challenges.
+                <span className="font-medium flex items-center"><Zap className="h-4 w-4 mr-1 inline text-purple-500" /> AI Workflow Evolution:</span> My toolkit is constantly adapting as the landscape rapidly evolves. Today's optimal workflow—combining Lovable for frameworks, Cursor for code refinement, and ChatGPT for conceptual challenges—will transform with tomorrow's innovations. This continuous adaptation ensures clients always benefit from the cutting edge of efficiency and capability.
               </p>
             </div>
           </div>
