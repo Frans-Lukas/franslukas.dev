@@ -55,7 +55,6 @@ const About = () => {
             <div className="bg-secondary p-6 rounded-lg opacity-0 animate-fade-in animation-delay-300">
               <div className="flex items-center mb-4">
                 <Drum className="h-8 w-8 text-purple-500 mr-2" />
-                <Music className="h-8 w-8 text-clay-600" />
               </div>
               <h3 className="text-xl font-medium mb-2">Creative Side</h3>
               <p>Ceramics</p>
