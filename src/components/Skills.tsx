@@ -1,45 +1,45 @@
 
 import React from 'react';
-import { CheckCircle, Server, Globe, Database, Code, Layers } from 'lucide-react';
+import { CheckCircle, Server, Globe, Database, Code, Layers, Bot, Zap } from 'lucide-react';
 
 const Skills = () => {
   const techSkills = [
     {
-      category: "Frontend",
-      icon: <Globe className="h-6 w-6 text-blue-600" />,
-      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "HTML/CSS"]
-    },
-    {
       category: "Backend",
       icon: <Server className="h-6 w-6 text-blue-600" />,
-      skills: ["Node.js", "Express", "API Design", "Microservices", "System Design"]
+      skills: ["Java", "Kubernetes", "Microservices", "System Design", "Observability"]
+    },
+    {
+      category: "Frontend",
+      icon: <Globe className="h-6 w-6 text-blue-600" />,
+      skills: ["React", "TypeScript", "C++", "Android", "HTML/CSS"]
     },
     {
       category: "Databases",
       icon: <Database className="h-6 w-6 text-blue-600" />,
-      skills: ["PostgreSQL", "MongoDB", "SQL", "Data Modeling", "Database Design"]
+      skills: ["PostgreSQL", "SQL", "Data Modeling", "Database Design"]
     },
     {
-      category: "Full-Stack",
+      category: "Monitoring",
       icon: <Layers className="h-6 w-6 text-blue-600" />,
-      skills: ["Wasp", "JAMstack", "GraphQL", "REST APIs", "Authentication/Authorization"]
+      skills: ["Grafana", "Metrics", "Logging", "Alerting", "Dashboards"]
     },
     {
-      category: "Development",
-      icon: <Code className="h-6 w-6 text-blue-600" />,
-      skills: ["Git", "CI/CD", "Testing", "Docker", "AWS"]
+      category: "AI Tools",
+      icon: <Bot className="h-6 w-6 text-blue-600" />,
+      skills: ["Lovable", "Cursor", "ChatGPT", "AI-Assisted Development"]
     }
   ];
 
   const softSkills = [
     "Rapid prototyping",
-    "Clean architecture",
-    "Fast iteration",
+    "Fast innovation",
     "Problem solving",
-    "Client communication",
-    "Remote collaboration",
+    "System thinking",
     "Technical writing",
-    "System thinking"
+    "Remote collaboration",
+    "Early AI adoption",
+    "Quick implementation"
   ];
 
   return (
@@ -76,8 +76,8 @@ const Skills = () => {
             <h3 className="text-2xl font-medium mb-6">Work Approach</h3>
             <div className="bg-white p-6 rounded-lg shadow-sm border mb-8 opacity-0 animate-fade-in">
               <p className="text-lg mb-4">
-                My approach to work is centered around flexibility, collaboration, and efficiency. 
-                I prefer working solo or in very small teams (1–2 people), which allows for:
+                I help clients solve problems quickly and effectively through AI-assisted development. 
+                My approach combines backend expertise with cutting-edge AI tools to:
               </p>
               
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-3 mt-4">
@@ -93,12 +93,10 @@ const Skills = () => {
             <div className="bg-secondary p-6 rounded-lg opacity-0 animate-fade-in animation-delay-200">
               <h3 className="text-xl font-medium mb-4">How I Work</h3>
               <p className="mb-3">
-                I'm remote-first and value lifestyle flexibility. This means I can collaborate efficiently 
-                across time zones and adapt to your project needs.
+                <span className="font-medium flex items-center"><Zap className="h-4 w-4 mr-1 inline text-purple-500" /> Problem to Solution:</span> Give me a problem, and I'll solve it quickly using my combined experience with backend systems and AI-assisted development.
               </p>
               <p>
-                My background in system design at Spotify combined with solo freelancing experience gives me 
-                a unique perspective on building efficient, scalable solutions without unnecessary complexity.
+                <span className="font-medium flex items-center"><Zap className="h-4 w-4 mr-1 inline text-purple-500" /> AI Workflow:</span> I use Lovable to create the initial framework, Cursor for refining code, and ChatGPT for mockups, copy, and technical challenges.
               </p>
             </div>
           </div>

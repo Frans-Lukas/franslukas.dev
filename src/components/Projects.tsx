@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowUpRight, ExternalLink, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -14,9 +15,9 @@ const Projects = () => {
     },
     {
       title: "samrosen.art",
-      description: "An e-commerce platform for AI-generated artwork collections.",
+      description: "An e-commerce platform for AI-generated artwork collections built with Cursor.",
       image: "/images/samrosen_mobile_mockup.png",
-      techs: ["Shopify", "HTML", "CSS", "JavaScript", "Liquid"],
+      techs: ["Shopify", "HTML", "CSS", "JavaScript", "Liquid", "Cursor"],
       link: "https://samrosen.art",
     }
   ];
@@ -27,7 +28,7 @@ const Projects = () => {
       <div className="container">
         <h2 className="text-3xl md:text-4xl font-serif mb-4 text-center">Featured Projects</h2>
         <p className="text-lg text-center text-foreground/80 mb-12 max-w-2xl mx-auto">
-        Some of my recent client projects, showcasing my web development and design expertise.
+          Projects showcasing my AI-assisted development approach for rapid implementation.
         </p>
         
         <div className="grid md:grid-cols-2 gap-8">

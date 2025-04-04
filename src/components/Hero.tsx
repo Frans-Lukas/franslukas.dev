@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -13,13 +14,13 @@ const Hero = () => {
       <div className="container mx-auto px-4 md:px-6 pt-16">
         <div className="max-w-3xl mx-auto md:mx-0">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 opacity-0 animate-fade-in">
-            Full-Stack Developer <span className="text-purple-500">&</span> <br className="hidden md:block" />
-            System Designer
+            Backend Engineer <span className="text-purple-500">&</span> <br className="hidden md:block" />
+            AI-Assisted Developer
           </h1>
           
           <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl opacity-0 animate-fade-in animation-delay-200">
-            Helping clients turn ideas into functional products quickly and intuitively. 
-            Specializing in Wasp, React, TypeScript, and PostgreSQL.
+            Turning ideas into functional products quickly through AI-assisted development.
+            Specializing in Java backend systems, Kubernetes, and observability with Grafana.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in animation-delay-300">
