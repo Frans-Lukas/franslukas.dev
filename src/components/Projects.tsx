@@ -7,14 +7,14 @@ const Projects = () => {
   const projects = [
     {
       title: "kjellgustafsson.com",
-      description: "A personal website built for artist Kjell Gustavsson, showcasing his portfolio, biography, and contact information.",
+      description: "A professional website for coach Kjell Gustafsson, showcasing his coaching services, upcoming retreats, and providing a platform for clients to connect and book sessions.",
       image: "/images/kjellgustafsson_mockup_p_abstract.png",
       techs: ["Wix", "HTML", "CSS", "JavaScript"],
       link: "https://kjellgustafsson.com",
     },
     {
       title: "samrosen.art",
-      description: "An art portfolio website for Sam Rosen, featuring galleries, artist statement, and exhibition history.",
+      description: "An e-commerce website for AI artist Sam Rosen, featuring his AI-generated artwork collections, artist statement, and a seamless shopping experience for art enthusiasts.",
       image: "/images/samrosen_mobile_mockup.png",
       techs: ["Shopify", "HTML", "CSS", "JavaScript", "Liquid"],
       link: "https://samrosen.art",
