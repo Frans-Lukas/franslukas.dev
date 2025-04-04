@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -20,8 +19,7 @@ const Hero = () => {
           
           <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl opacity-0 animate-fade-in animation-delay-200">
             Turning ideas into functional products in record time. 
-            Specializing in fast-paced development using Wasp, Java backends,
-            and AI-assisted workflows.
+            Specializing in rapid prototyping with Wasp and AI-assisted development.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in animation-delay-300">
