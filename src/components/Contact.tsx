@@ -1,9 +1,6 @@
-
 import React from 'react';
 import { Mail, Github, Linkedin, ExternalLink } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+import ContactForm from '@/components/ui/contact-form';
 
 const Contact = () => {
   return (
@@ -68,32 +65,7 @@ const Contact = () => {
           
           <div className="bg-white text-foreground rounded-lg p-6 shadow-lg">
             <h3 className="text-2xl font-medium mb-4">Send me a message</h3>
-            <form className="space-y-4">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-1">
-                  Name
-                </label>
-                <Input id="name" placeholder="Your name" />
-              </div>
-              
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-1">
-                  Email
-                </label>
-                <Input id="email" type="email" placeholder="your@email.com" />
-              </div>
-              
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-1">
-                  Message
-                </label>
-                <Textarea id="message" rows={5} placeholder="Tell me about your project..." />
-              </div>
-              
-              <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                Send Message
-              </Button>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </div>
