@@ -1,9 +1,31 @@
 
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Mail, Github, Linkedin, ExternalLink } from 'lucide-react';
 import ContactForm from '@/components/ui/contact-form';
 
 const Contact = () => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const cardRef = useRef<HTMLDivElement>(null);
+  
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!cardRef.current) return;
+      
+      const rect = cardRef.current.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+      
+      // Calculate the distance from the center
+      const distX = (e.clientX - centerX) / 25; // Reduce the effect intensity
+      const distY = (e.clientY - centerY) / 25; // Reduce the effect intensity
+      
+      setPosition({ x: distX, y: distY });
+    };
+    
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+  
   return (
     <section id="contact" className="section bg-purple-200 bg-opacity-80 text-primary-foreground">
       <div className="container">
@@ -64,7 +86,15 @@ const Contact = () => {
             </div>
           </div>
           
-          <div className="bg-white text-foreground rounded-lg p-6 shadow-lg">
+          <div 
+            ref={cardRef}
+            className="bg-white text-foreground rounded-lg p-6 shadow-lg transition-transform duration-200 ease-out"
+            style={{ 
+              transform: `perspective(1000px) rotateX(${position.y * -1}deg) rotateY(${position.x}deg) scale3d(1.02, 1.02, 1.02)`,
+              boxShadow: `0 15px 35px rgba(0, 0, 0, 0.1), 
+                          ${position.x * 0.5}px ${position.y * 0.5}px 25px rgba(0, 0, 0, 0.05)`
+            }}
+          >
             <h3 className="text-2xl font-medium mb-4">Send me a message</h3>
             <ContactForm />
           </div>
