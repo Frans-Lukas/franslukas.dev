@@ -13,13 +13,13 @@ const Hero = () => {
       <div className="container mx-auto px-4 md:px-6 pt-16">
         <div className="max-w-3xl mx-auto md:mx-0">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 opacity-0 animate-fade-in">
-            Rapid Prototyping <span className="text-purple-500">&</span> <br className="hidden md:block" />
-            Development with Wasp
+            Fullstack Developer <span className="text-purple-500">&</span> <br className="hidden md:block" />
+            AI Prototyping Enthusiast
           </h1>
           
           <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl opacity-0 animate-fade-in animation-delay-200">
-            Turning ideas into functional products in record time. 
-            Specializing in rapid prototyping with Wasp and AI-assisted development.
+            Backend-first developer passionate about building robust systems and creating rapid prototypes with AI. 
+            Turning complex ideas into scalable solutions with modern tech stacks.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in animation-delay-300">
