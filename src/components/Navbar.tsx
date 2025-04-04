@@ -47,7 +47,7 @@ const Navbar = () => {
             Contact
           </a>
           <Button asChild variant="outline">
-            <a href="mailto:contact@franslukas.com">Let's Talk</a>
+            <a href="mailto:contact@franslukas.dev">Let's Talk</a>
           </Button>
         </div>
         
@@ -93,7 +93,7 @@ const Navbar = () => {
               Contact
             </a>
             <Button asChild className="w-full mt-2">
-              <a href="mailto:contact@franslukas.com">Let's Talk</a>
+              <a href="mailto:contact@franslukas.dev">Let's Talk</a>
             </Button>
           </div>
         </div>

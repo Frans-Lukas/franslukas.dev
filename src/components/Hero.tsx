@@ -1,11 +1,10 @@
-
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center relative">
+    <section id="hero" className="min-h-screen flex flex-col justify-center relative">
       <div 
         className="absolute inset-0 bg-gradient-to-br from-purple-100 to-transparent opacity-70 z-[-1]"
         aria-hidden="true"
